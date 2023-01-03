@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "/RE",
+        "KUR",
+        "UK/"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:blaze_rod"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "E": {
+            "item": "masmod:gem"
+        },
+        "U": {
+            "item": "minecraft:stick"
+        },
+        "K": {
+            "tag": "masmod:gems"
+        }
+    },
+    "result": {
+        "item": "masmod:magic_wand",
+        "count": 1
+    },
+    "group": "magic"
+}

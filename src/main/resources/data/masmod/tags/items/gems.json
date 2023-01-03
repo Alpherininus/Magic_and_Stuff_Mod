@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:emerald",
+    "basmod:ruby",
+    "masmod:gem"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "masmod:block/gem_block"
+    }
+  }
+}

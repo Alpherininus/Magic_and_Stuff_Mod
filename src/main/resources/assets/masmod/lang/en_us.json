@@ -1,0 +1,32 @@
+{
+  "language.name": "English",
+  "language.region": "United States",
+  "language.code": "en_us",
+  "menu.modded": " (Modded)",
+
+  "block.masmod.stone": "Stone",
+
+  "block.masmod.gem_ore": "Gem Ore",
+  "block.masmod.gem_block": "Gem Block",
+  "item.masmod.gem": "Gems",
+
+  "item.masmod.magic_wand": "Magic Wand",
+
+  "item.masmod.group_icon_blocks": "Group Icon [Blocks]",
+  "item.masmod.group_icon_items": "Group Icon [Items]",
+
+  "entity.minecraft.zombie": "Zombie",
+
+  "death.attack.magic": "%1$s was killed by magic",
+  "death.attack.magic.player": "%1$s was killed by magic whilst trying to escape %2$s",
+  "death.attack.even_more_magic": "%1$s was killed by even more magic",
+
+  "effect.none": "No Effects",
+  "effect.masmod.freeze": "Freeze",
+
+  "enchantment.masmod.sharpness": "Sharpness",
+
+  "itemGroup.masmod.moditems": "Magic and Stuff Mod",
+
+  "biome.masmod.forest": "Forest"
+}
