@@ -7,6 +7,7 @@ import de.alpherininus.masmod.core.utils.CustomItemGroup;
 import de.alpherininus.masmod.core.utils.materials.CustomArmorMaterial;
 import de.alpherininus.masmod.core.utils.materials.CustomToolMaterial;
 import de.alpherininus.masmod.core.utils.materials.itemtier.ItemAttackDamage;
+import de.alpherininus.masmod.core.utils.materials.itemtier.ItemAttackSpeed;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Food;
@@ -26,7 +27,7 @@ public class ItemInit {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public static final RegistryObject<Item> MAGIC_WAND = ITEM_REGISTER.register("magic_wand", ()-> new MagicWand(CustomToolMaterial.MATERIAL_NETHERITE_TOOL, ItemAttackDamage.getNetherite(), 4f,
+    public static final RegistryObject<Item> MAGIC_WAND = ITEM_REGISTER.register("magic_wand", ()-> new MagicWand(CustomToolMaterial.MATERIAL_NETHERITE_TOOL, ItemAttackDamage.getNetherite(), ItemAttackSpeed.getDefaultAttackSpeed(),
             new Item.Properties().group(CustomItemGroup.ITEM_GROUP_ITEM)));
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
