@@ -2,7 +2,7 @@
   "language.name": "English",
   "language.region": "United States",
   "language.code": "en_us",
-  "menu.modded": " (Modded)",
+  "menu.modded": " (Modded) Get Better :)",
 
   "block.masmod.stone": "Stone",
 
@@ -17,9 +17,8 @@
 
   "entity.minecraft.zombie": "Zombie",
 
-  "death.attack.magic": "%1$s was killed by magic",
-  "death.attack.magic.player": "%1$s was killed by magic whilst trying to escape %2$s",
-  "death.attack.even_more_magic": "%1$s was killed by even more magic",
+  "death.attack.masmod_magic": "%1$s wurde durch Magie getötet.",
+  "death.attack.masmod_magic.player": "%1$s wurde von %2$s mit Magie getötet.",
 
   "effect.none": "No Effects",
   "effect.masmod.freeze": "Freeze",

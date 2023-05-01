@@ -2,6 +2,7 @@ package de.alpherininus.masmod.core.utils.materials;
 
 import de.alpherininus.masmod.core.init.ItemInit;
 import de.alpherininus.masmod.core.utils.materials.blocktier.BlockToolLevel;
+import de.alpherininus.masmod.core.utils.materials.itemtier.ItemDurability;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -9,12 +10,12 @@ import java.util.function.Supplier;
 
 public enum CustomToolMaterial implements IItemTier {
 
-    MATERIAL_WOOD_TOOL(BlockToolLevel.getWoodAndGold(), 59, 4f, 0f, 15, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
-    MATERIAL_GOLD_TOOL(BlockToolLevel.getWoodAndGold(), 29, 4f, 0f, 22, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
-    MATERIAL_STONE_TOOL(BlockToolLevel.getStone(), 131, 8f, 0f, 5, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
-    MATERIAL_IRON_TOOL(BlockToolLevel.getIron(), 250, 12f, 0f, 14, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
-    MATERIAL_DIAMOND_TOOL(BlockToolLevel.getDiamond(), 1561, 16f, 0f, 10, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
-    MATERIAL_NETHERITE_TOOL(BlockToolLevel.getNetherite(), 2031, 20f, 1f, 15, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get()));
+    MATERIAL_WOOD_TOOL(BlockToolLevel.getWoodAndGold(), ItemDurability.getGold(), 4f, 0f, 15, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
+    MATERIAL_GOLD_TOOL(BlockToolLevel.getWoodAndGold(), ItemDurability.getWood(), 4f, 0f, 22, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
+    MATERIAL_STONE_TOOL(BlockToolLevel.getStone(), ItemDurability.getStone(), 8f, 0f, 5, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
+    MATERIAL_IRON_TOOL(BlockToolLevel.getIron(), ItemDurability.getIron(), 12f, 0f, 14, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
+    MATERIAL_DIAMOND_TOOL(BlockToolLevel.getDiamond(), ItemDurability.getDiamond(), 16f, 0f, 10, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get())),
+    MATERIAL_NETHERITE_TOOL(BlockToolLevel.getNetherite(), ItemDurability.getNetherite(), 20f, 0f, 15, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get()));
 
     private final int harvestLevel;
     private final int maxUses;

@@ -2,6 +2,7 @@ package de.alpherininus.masmod.common.items;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.Attributes;
@@ -42,11 +43,6 @@ public class MagicWand extends SwordItem {
         return equipmentSlot == EquipmentSlotType.MAINHAND ? this.attributeModifiers : super.getAttributeModifiers(equipmentSlot);
     }
 
-    @Override
-    public boolean hasCustomEntity(ItemStack stack) {
-        return true;
-    }
-
     public UseAction getUseAction(ItemStack stack) {
         return UseAction.CROSSBOW;
     }
@@ -59,5 +55,17 @@ public class MagicWand extends SwordItem {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
         playerIn.setActiveHand(handIn);
         return ActionResult.resultConsume(itemstack);
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    @Override
+    public boolean onLeftClickEntity(ItemStack stack, PlayerEntity player, Entity entity) {
+
+        return super.onLeftClickEntity(stack, player, entity);
     }
 }

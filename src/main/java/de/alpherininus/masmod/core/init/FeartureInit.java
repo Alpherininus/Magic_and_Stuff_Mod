@@ -11,7 +11,7 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 public class FeartureInit {
     public static void addOres(final BiomeLoadingEvent event) {
-        addOre(event, OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.GEM_ORE.get().getDefaultState(), 2, 0, 35, 10);
+        addOre(event, OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.GEM_ORE.get().getDefaultState(), 5, 1, 35, 20);
 
     }
 
