@@ -1,8 +1,5 @@
 package de.alpherininus.masmod.core.utils.materials.itemtier;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.entity.player.PlayerEntity;
-
 public class ItemAttackDamage {
 
     public static int getWoodAndGold() {
@@ -27,12 +24,6 @@ public class ItemAttackDamage {
 
     public static int setAttackDamadge(int attack) {
         return attack;
-    }
-
-    public static float getEXPforAttackDamage() {
-        PlayerEntity playerIn = Minecraft.getInstance().player;
-        assert playerIn != null;
-        return playerIn.experience;
     }
 
 }

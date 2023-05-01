@@ -37,12 +37,6 @@ public class ItemInit {
                     ItemAttackDamage.getNetherite(), ItemAttackSpeed.getDefaultAttackSpeed(),
             new Item.Properties().group(CustomItemGroup.ITEM_GROUP_ITEM)));
 
-    private static PlayerEntity player;
-    public static final RegistryObject<Item> EXP_SWORD = ITEM_REGISTER.register("exp_sword", ()->
-            new MagicWand(CustomToolMaterial.MATERIAL_NETHERITE_TOOL,
-                    (int) ItemAttackDamage.getEXPforAttackDamage(), ItemAttackSpeed.getDefaultAttackSpeed(),
-                    new Item.Properties().group(CustomItemGroup.ITEM_GROUP_ITEM)));
-
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // TODO Armor
 
