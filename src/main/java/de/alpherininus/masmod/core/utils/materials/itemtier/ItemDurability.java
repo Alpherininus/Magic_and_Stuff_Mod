@@ -1,5 +1,7 @@
 package de.alpherininus.masmod.core.utils.materials.itemtier;
 
+import net.minecraft.entity.player.PlayerEntity;
+
 public class ItemDurability {
 
     public static int getWood() {
@@ -28,6 +30,10 @@ public class ItemDurability {
 
     public static int setItemDurability(int durability) {
         return durability;
+    }
+
+    public static int setModifiItemDurability(PlayerEntity modifi, int modifiDur) {
+        return modifiDur;
     }
 
 }

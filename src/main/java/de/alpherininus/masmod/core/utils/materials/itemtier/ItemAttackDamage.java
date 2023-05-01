@@ -1,5 +1,6 @@
 package de.alpherininus.masmod.core.utils.materials.itemtier;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.PlayerEntity;
 
 public class ItemAttackDamage {
@@ -28,7 +29,10 @@ public class ItemAttackDamage {
         return attack;
     }
 
-    public static float setModifiAttackDamage(PlayerEntity modifi, float modifiAttack) {
-        return modifi.getCooledAttackStrength(modifiAttack);
+    public static float getEXPforAttackDamage() {
+        PlayerEntity playerIn = Minecraft.getInstance().player;
+        assert playerIn != null;
+        return playerIn.experience;
     }
+
 }
