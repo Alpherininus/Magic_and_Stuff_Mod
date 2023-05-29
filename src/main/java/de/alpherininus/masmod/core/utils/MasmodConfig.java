@@ -11,7 +11,7 @@ public class MasmodConfig {
         public static final ForgeConfigSpec.ConfigValue<Boolean> config_search;
 
         static {
-            CONFIG_BUILDER.comment("config your item").push("Masmod Armor Configs");
+            CONFIG_BUILDER.comment("config your creative tab").push("Masmod Creative Tab");
 
             config_search = CONFIG_BUILDER.comment("Default value is false.").define("Get Searchbar", false);
 

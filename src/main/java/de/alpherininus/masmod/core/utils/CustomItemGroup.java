@@ -17,7 +17,6 @@ public class CustomItemGroup extends ItemGroup {
 
     public CustomItemGroup(int index, String label) {
         super(index, label);
-
     }
 
     @Override
@@ -35,12 +34,18 @@ public class CustomItemGroup extends ItemGroup {
         return MasmodConfig.CUSTOMGUI.config_search.get();
     }
 
+    @Override
+    public ItemGroup setNoTitle() {
+        return super.setNoTitle();
+    }
+
     @OnlyIn(Dist.CLIENT)
     public net.minecraft.util.ResourceLocation getBackgroundImage() {
         if (hasSearchBar()) {
+            this.setNoTitle();
             return new ResourceLocation(Masmod.MOD_ID, "textures/gui/container/custom/masmod_search.png");
         } else {
-            return new ResourceLocation(Masmod.MOD_ID, "textures/gui/container/custom/masmod.png");
+            return new ResourceLocation(Masmod.MOD_ID, "textures/gui/container/custom/masmod_items.png");
         }
     }
 
