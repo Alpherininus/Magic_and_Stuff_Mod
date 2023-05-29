@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 
 public enum CustomArmorMaterial implements IArmorMaterial {
 
-    MASMOD_ARMOR("masmod_armor", 10, new int[] {4,7,9,4}, 17, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 4f, 0.5f, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get()));
+    MASMOD_ARMOR("masmod_armor", 10, new int[] {0,0,0,0}, 17, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0f, 0f, ()-> Ingredient.fromItems(ItemInit.GEM_ITEM.get()));
 
     private static final int[] baseDurability = {128, 144, 160, 112};
     private final String name;
@@ -73,4 +73,5 @@ public enum CustomArmorMaterial implements IArmorMaterial {
     public float getKnockbackResistance() {
         return this.knockbackResistance;
     }
+
 }

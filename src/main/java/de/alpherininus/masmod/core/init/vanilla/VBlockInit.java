@@ -19,7 +19,7 @@ public class VBlockInit {
     public static final RegistryObject<Block> BEDROCK = VANILLA_BLOCK_REGISTER.register("bedrock",
             ()-> new Block(AbstractBlock.Properties.create((Material.IRON), MaterialColor.GREEN)
                     .hardnessAndResistance(BlockHardness.getIron(), BlockResistance.getIron())
-                    .harvestTool(ToolType.PICKAXE)
+                    .harvestTool(ToolType.HOE)
                     .harvestLevel(BlockToolLevel.getDiamond())
-                    .sound(SoundType.STONE)));
+                    .sound(SoundType.SLIME)));
 }

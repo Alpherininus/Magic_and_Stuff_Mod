@@ -8,11 +8,9 @@ import de.alpherininus.masmod.core.utils.materials.CustomArmorMaterial;
 import de.alpherininus.masmod.core.utils.materials.CustomToolMaterial;
 import de.alpherininus.masmod.core.utils.materials.itemtier.ItemAttackDamage;
 import de.alpherininus.masmod.core.utils.materials.itemtier.ItemAttackSpeed;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Food;
-import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,13 +23,11 @@ public class ItemInit {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // TODO ITEMS
-
     public static final RegistryObject<Item> GEM_ITEM = ITEM_REGISTER.register("gem",
             ()-> new Item(new Item.Properties().group(CustomItemGroup.ITEM_GROUP_ITEM)));
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // TODO Wapons
-
     public static final RegistryObject<Item> MAGIC_WAND = ITEM_REGISTER.register("magic_wand", ()->
             new MagicWand(CustomToolMaterial.MATERIAL_NETHERITE_TOOL,
                     ItemAttackDamage.getNetherite(), ItemAttackSpeed.getDefaultAttackSpeed(),
@@ -39,7 +35,6 @@ public class ItemInit {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // TODO Armor
-
     public static final RegistryObject<Item> MASMOD_BOOTS = ITEM_REGISTER.register("masmod_boots", ()->
             new ArmorItem(CustomArmorMaterial.MASMOD_ARMOR, EquipmentSlotType.FEET,
             new Item.Properties().group(CustomItemGroup.ITEM_GROUP_ITEM)));
@@ -58,7 +53,6 @@ public class ItemInit {
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     // TODO FOOD
-
     public static final RegistryObject<Item> GEM_APPLE = ITEM_REGISTER.register("gem_apple", ()->
             new GemApple(new Item.Properties().food(new Food.Builder()
             .hunger(7).fastToEat().setAlwaysEdible().build()).group(CustomItemGroup.ITEM_GROUP_ITEM)));

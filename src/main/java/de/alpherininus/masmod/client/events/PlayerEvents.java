@@ -18,20 +18,20 @@ public class PlayerEvents {
     @SubscribeEvent
     public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
         PlayerEntity player = event.player;
-        player.inventory.armorInventory.set(0, new ItemStack(ItemInit.MASMOD_HELMET.get()));
+        // player.inventory.armorInventory.set(0, new ItemStack(ItemInit.MASMOD_HELMET.get()));
 
     }
 
     @SubscribeEvent
     public static void onPlayerToss(ItemTossEvent event) {
-        PlayerEntity player = event.getPlayer();
-        World world = player.getEntityWorld();
-        BlockState state = world.getBlockState(player.getPosition().down());
+        // PlayerEntity player = event.getPlayer();
+        // World world = player.getEntityWorld();
+        // BlockState state = world.getBlockState(player.getPosition().down());
 
-        if (state.getBlock() == BlockInit.ADVANCE_GEM_BLOCK.get()) {
-            player.addItemStackToInventory(new ItemStack(ItemInit.GEM_APPLE.get()));
+        // if (state.getBlock() == BlockInit.ADVANCE_GEM_BLOCK.get()) {
+        //    player.addItemStackToInventory(new ItemStack(ItemInit.GEM_APPLE.get()));
 
-        }
+        //}
     }
 
 }

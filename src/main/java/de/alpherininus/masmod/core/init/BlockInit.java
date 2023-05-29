@@ -1,7 +1,6 @@
 package de.alpherininus.masmod.core.init;
 
 import de.alpherininus.masmod.Masmod;
-import de.alpherininus.masmod.common.blocks.AdvanceGemBlock;
 import de.alpherininus.masmod.core.utils.materials.blocktier.BlockHardness;
 import de.alpherininus.masmod.core.utils.materials.blocktier.BlockResistance;
 import de.alpherininus.masmod.core.utils.materials.blocktier.BlockToolLevel;
@@ -32,7 +31,5 @@ public class BlockInit {
                     .harvestTool(ToolType.PICKAXE)
                     .harvestLevel(BlockToolLevel.getDiamond())
                     .sound(SoundType.STONE)));
-
-    public static final RegistryObject<Block> ADVANCE_GEM_BLOCK = BLOCK_REGISTER.register("adv_gem_block", AdvanceGemBlock::new);
-
+    
 }
