@@ -1,0 +1,23 @@
+{
+  "glowstone_sound": {
+    "category": "blocks",
+    "subtitle": "masmod.glowstone_sound",
+    "sounds": [
+      "masmod:custom/glowstone_sound"
+    ]
+  },
+  "break_glowstone_sound": {
+    "category": "blocks",
+    "subtitle": "masmod.break_glowstone_sound",
+    "sounds": [
+      "masmod:custom/break_glowstone_sound"
+    ]
+  },
+  "step_glowstone_sound": {
+    "category": "blocks",
+    "subtitle": "masmod.step_glowstone_sound",
+    "sounds": [
+      "masmod:custom/step_glowstone_sound"
+    ]
+  }
+}

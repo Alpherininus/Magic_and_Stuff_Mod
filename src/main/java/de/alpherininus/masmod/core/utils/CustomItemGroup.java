@@ -7,9 +7,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.fml.config.ModConfig;
-
-import java.awt.*;
 
 public class CustomItemGroup extends ItemGroup {
 

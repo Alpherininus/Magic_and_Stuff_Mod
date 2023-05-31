@@ -3,6 +3,7 @@ package de.alpherininus.masmod;
 import de.alpherininus.masmod.core.init.*;
 import de.alpherininus.masmod.core.init.vanilla.VBlockInit;
 import de.alpherininus.masmod.core.utils.CustomItemGroup;
+import de.alpherininus.masmod.core.utils.CustomSoundEvent;
 import de.alpherininus.masmod.core.utils.MasmodConfig;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.Minecraft;
@@ -40,6 +41,8 @@ public class Masmod {
         ItemInit.ITEM_REGISTER.register(bus);
         BlockInit.BLOCK_REGISTER.register(bus);
         VBlockInit.VANILLA_BLOCK_REGISTER.register(bus);
+
+        CustomSoundEvent.CUSTOM_SOUND_EVENTS.register(bus);
 
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
