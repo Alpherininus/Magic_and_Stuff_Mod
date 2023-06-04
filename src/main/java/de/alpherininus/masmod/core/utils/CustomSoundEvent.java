@@ -1,6 +1,7 @@
 package de.alpherininus.masmod.core.utils;
 
 import de.alpherininus.masmod.Masmod;
+import net.minecraft.block.GlassBlock;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,7 +20,7 @@ public class CustomSoundEvent {
 
 
     private static RegistryObject<SoundEvent> registerCustomSoundEvent(String name) {
-        return CUSTOM_SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Masmod.MOD_ID, "custom/" + name)));
+        return CUSTOM_SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Masmod.MOD_ID, "/custom/" + name)));
     }
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return CUSTOM_SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Masmod.MOD_ID, name)));
@@ -28,4 +29,6 @@ public class CustomSoundEvent {
     public static void register(IEventBus bus) {
         CUSTOM_SOUND_EVENTS.register(bus);
     }
+
 }
+
