@@ -1,7 +1,6 @@
 package de.alpherininus.masmod.core.utils;
 
 import de.alpherininus.masmod.Masmod;
-import net.minecraft.block.GlassBlock;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.eventbus.api.IEventBus;

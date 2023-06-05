@@ -6,7 +6,7 @@ public class MasmodConfig {
 
     public static class CUSTOMGUI {
         public static final ForgeConfigSpec.Builder CONFIG_BUILDER = new ForgeConfigSpec.Builder();
-        public static ForgeConfigSpec COMMON_SPEC_CUSTOMARMOR;
+        public static ForgeConfigSpec COMMON_SPEC_CUSTOMGUI;
 
         public static final ForgeConfigSpec.ConfigValue<Boolean> config_search;
 
@@ -17,7 +17,25 @@ public class MasmodConfig {
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
             CONFIG_BUILDER.pop();
-            COMMON_SPEC_CUSTOMARMOR = CONFIG_BUILDER.build();
+            COMMON_SPEC_CUSTOMGUI = CONFIG_BUILDER.build();
+        }
+    }
+
+    public static class KEYSETTINGS {
+
+        public static final ForgeConfigSpec.Builder CONFIG_BUILDER = new ForgeConfigSpec.Builder();
+        public static ForgeConfigSpec COMMON_SPEC_KEYSETTINGS;
+
+        public static final ForgeConfigSpec.ConfigValue<Boolean> config_alredy_jump;
+
+        static {
+            CONFIG_BUILDER.comment("config your keys").push("Masmod Key Settings");
+
+            config_alredy_jump = CONFIG_BUILDER.comment("Default value is true.").define("Set Jump with Key X", true);
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            CONFIG_BUILDER.pop();
+            COMMON_SPEC_KEYSETTINGS = CONFIG_BUILDER.build();
         }
     }
 }

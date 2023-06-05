@@ -49,7 +49,9 @@ public class Masmod {
 
         MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FeartureInit::addOres);
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MasmodConfig.CUSTOMGUI.COMMON_SPEC_CUSTOMARMOR, "basmod/masmod-common.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MasmodConfig.CUSTOMGUI.COMMON_SPEC_CUSTOMGUI, "basmod/creative_tab-common.toml");
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, MasmodConfig.KEYSETTINGS.COMMON_SPEC_KEYSETTINGS, "basmod/key_settings-common.toml");
+
 
         MinecraftForge.EVENT_BUS.register(this);
     }

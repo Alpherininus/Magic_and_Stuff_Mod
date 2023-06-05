@@ -27,5 +27,8 @@
 
   "itemGroup.masmod.moditems": "Magic and Stuff Mod",
 
-  "biome.masmod.forest": "Forest"
+  "biome.masmod.forest": "Forest",
+
+  "key.catergory.masmod": "Magic and Stuff Mod",
+  "key.masmod.masmod_x_key": "X"
 }
